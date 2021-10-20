@@ -18,25 +18,50 @@ const container = document.querySelector(".container")
 
 if (difficult == 1) {
     for (let i = 1; i <= 100; i++) {
-        let cell_10 = `<div id="cell_click" class="cell_10">1${i}</div>`
-        container.innerHTML += cell_10
-        let element = document.getElementById("cell_click")
-        element.addEventListener('click', function () {
-            let element = document.getElementById("cell_click").classList.add(".1azzurro")
+        let cell_10 = document.createElement("div");
+        cell_10.className = "cell_10"
+        container.append(cell_10)
+        let text = `<span>${i}</span>`
+        cell_10.innerHTML += text
+        cell_10.addEventListener("click", function () {
+            this.style.backgroundColor = "blue"
         })
+        /* let cell_10 = `<div id="cell_click" class="cell_10">1${i}</div>`
+        container.innerHTML += cell_10
 
+        document.getElementById("cell_click").addEventListener('click', function () {
+            //let element = document.getElementById("cell_click").classList.add("azzurro")
+            console.log("click1")
+        })
+        */
     }
 }
 
 else if (difficult == 2) {
     for (let i = 1; i <= 81; i++) {
-        let cell_9 = `<div class="cell_9">${i}</div>`
-        container.innerHTML += cell_9
+        /* let cell_9 = `<div class="cell_9">${i}</div>`
+        container.innerHTML += cell_9 */
+        let = cell_9 = document.createElement("div");
+        cell_9.className = "cell_9"
+        container.append(cell_9)
+        let text = `<span>${i}</span>`
+        cell_9.innerHTML += text
+        cell_9.addEventListener("click", function () {
+            this.style.backgroundColor = "blue"
+        })
     }
 }
 else if (difficult == 3) {
     for (let i = 1; i <= 49; i++) {
-        let cell_7 = `<div class="cell_7">${i}</div>`
-        container.innerHTML += cell_7
+        /* let cell_7 = `<div class="cell_7">${i}</div>`
+        container.innerHTML += cell_7 */
+        let cell_7 = document.createElement("div");
+        cell_7.className = "cell_7"
+        container.append(cell_7)
+        let text = `<span>${i}</span>`
+        cell_7.innerHTML += text
+        cell_7.addEventListener("click", function () {
+            this.style.backgroundColor = "blue"
+        })
     }
 }
