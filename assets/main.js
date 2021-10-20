@@ -18,8 +18,13 @@ const container = document.querySelector(".container")
 
 if (difficult == 1) {
     for (let i = 1; i <= 100; i++) {
-        let cell_10 = `<div class="cell_10">1${i}</div>`
+        let cell_10 = `<div id="cell_click" class="cell_10">1${i}</div>`
         container.innerHTML += cell_10
+        let element = document.getElementById("cell_click")
+        element.addEventListener('click', function () {
+            let element = document.getElementById("cell_click").classList.add(".1azzurro")
+        })
+
     }
 }
 
