@@ -16,10 +16,10 @@ console.log(difficult)
 
 
 //crea un ciclo per creare le caselle
-for (let i = 1; i <= 51; i++) {
+for (let i = 1; i <= 49; i++) {
         //crea condizioni corrispondenti ai valori inseriti dall utente
     if (difficult === 1) {
-        console.log("Difficile")
+        //console.log("Difficile")
     }
 
 }
