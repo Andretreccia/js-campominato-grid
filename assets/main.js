@@ -16,30 +16,22 @@ console.log(difficult)
 
 const container = document.querySelector(".container")
 
-//definire una funzione per creare un array di n elementi
-
-/*  let lista = [];
-function createArray() {
-    for (let i = 1; i <= 10; i++) {
-        lista.push(i);
+if (difficult == 1) {
+    for (let i = 1; i <= 100; i++) {
+        let cell_10 = `<div class="cell_10">1${i}</div>`
+        container.innerHTML += cell_10
     }
 }
-const prova = createArray()
-console.log(prova)
- */
-//definire una funzione per cambiare l ordine degli elementi in un array
 
-//function randomNotRepeat()
-
-
-//crea un ciclo per creare le caselle
-for (let i = 1; i <= 100; i++) {
-        //crea condizioni corrispondenti ai valori inseriti dall utente
-    if (difficult == 1) {
-
-        let cell_10 = `<div class="cell_10"> ${i}</div>`
-        container.innerHTML += cell_10
-        //console.log("Difficile")
+else if (difficult == 2) {
+    for (let i = 1; i <= 81; i++) {
+        let cell_9 = `<div class="cell_9">${i}</div>`
+        container.innerHTML += cell_9
     }
-
+}
+else if (difficult == 3) {
+    for (let i = 1; i <= 49; i++) {
+        let cell_7 = `<div class="cell_7">${i}</div>`
+        container.innerHTML += cell_7
+    }
 }

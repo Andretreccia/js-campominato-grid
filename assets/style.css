@@ -10,21 +10,38 @@ body{
 .container{
     width: 800px;
     height: 800px;
-    display: flex;
     flex-wrap: wrap;
+    margin: auto;
 }
+.flex{
+    display: flex;
+}
+
 .cell_7{
     width: calc(100% / 7);
     height: calc(100% / 7);
     border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
 }
 .cell_9{
     width: calc(100% / 9);
     height: calc(100% / 9);
     border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     color: white;
 }
 .cell_10{
     width: calc(100% / 10);
     height: calc(100% / 10);
     border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     color: white;
 }
