@@ -14,11 +14,31 @@ const difficult = parseInt(prompt(`Seleziona una difficoltà:
 console.log(difficult)
 
 
+const container = document.querySelector(".container")
+
+//definire una funzione per creare un array di n elementi
+
+/*  let lista = [];
+function createArray() {
+    for (let i = 1; i <= 10; i++) {
+        lista.push(i);
+    }
+}
+const prova = createArray()
+console.log(prova)
+ */
+//definire una funzione per cambiare l ordine degli elementi in un array
+
+//function randomNotRepeat()
+
 
 //crea un ciclo per creare le caselle
-for (let i = 1; i <= 49; i++) {
+for (let i = 1; i <= 100; i++) {
         //crea condizioni corrispondenti ai valori inseriti dall utente
-    if (difficult === 1) {
+    if (difficult == 1) {
+
+        let cell_10 = `<div class="cell_10"> ${i}</div>`
+        container.innerHTML += cell_10
         //console.log("Difficile")
     }
 
