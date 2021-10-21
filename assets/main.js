@@ -16,7 +16,7 @@ console.log(difficult) */
 
 
 
-/* const difficult = document.getElementById("level").value
+const difficult = document.getElementById("level").value
 console.log(difficult)
 
 document.getElementById("choi_btn").addEventListener("click", function () {
@@ -24,9 +24,11 @@ document.getElementById("choi_btn").addEventListener("click", function () {
     //console.log(difficult)
 
     const container = document.querySelector(".container")
+    container.innerHTML = ''
 
     if (difficult == 1) {
         for (let i = 1; i <= 100; i++) {
+
             let cell_10 = document.createElement("div");
             cell_10.className = "cell_10"
             container.append(cell_10)
@@ -67,4 +69,40 @@ document.getElementById("choi_btn").addEventListener("click", function () {
             })
         }
     }
-}); */
+});
+
+//funzione per ottenere valori corrispondenti al numero di celle
+
+
+/* function choice(optionValue) {
+    let NumberCell
+    if (choice == "1") {
+        NumberCell = 100
+    }
+    else if (choice == "2") {
+
+        NumberCell = 81
+    }
+    else if (choice == "3") {
+        NumberCell = 49
+    }
+
+
+}
+
+
+const choi_btn = document.getElementById("choi_btn")
+choi_btn.addEventListener("click", function () {
+    const choiceValue = choi_btn.value
+    const viewChoice = choice(choiceValue)
+    console.log(viewChoice)
+
+
+
+
+
+
+
+})
+ */
+
