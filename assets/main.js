@@ -13,7 +13,10 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro. */
                                         2 = Media
                                         3 = Principiante`))
 console.log(difficult) */
-const difficult = document.getElementById("level").value
+
+
+
+/* const difficult = document.getElementById("level").value
 console.log(difficult)
 
 document.getElementById("choi_btn").addEventListener("click", function () {
@@ -33,21 +36,14 @@ document.getElementById("choi_btn").addEventListener("click", function () {
                 this.style.backgroundColor = "blue"
             })
 
-            /* let cell_10 = `<div id="cell_click" class="cell_10">1${i}</div>`
-            container.innerHTML += cell_10
-            document.querySelectorAll(".cell_10").addEventListener
-            document.getElementById("cell_click").addEventListener('click', function () {
-                //let element = document.getElementById("cell_click").classList.add("azzurro")
-                console.log("click1")
-            }) */
+
 
         }
     }
 
     else if (difficult == 2) {
         for (let i = 1; i <= 81; i++) {
-            /* let cell_9 = `<div class="cell_9">${i}</div>`
-            container.innerHTML += cell_9 */
+
             let = cell_9 = document.createElement("div");
             cell_9.className = "cell_9"
             container.append(cell_9)
@@ -60,8 +56,7 @@ document.getElementById("choi_btn").addEventListener("click", function () {
     }
     else if (difficult == 3) {
         for (let i = 1; i <= 49; i++) {
-            /* let cell_7 = `<div class="cell_7">${i}</div>`
-            container.innerHTML += cell_7 */
+
             let cell_7 = document.createElement("div");
             cell_7.className = "cell_7"
             container.append(cell_7)
@@ -72,4 +67,4 @@ document.getElementById("choi_btn").addEventListener("click", function () {
             })
         }
     }
-});
+}); */
